@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div *ngFor="let product of products">
+    <mat-card class="product">
+      <mat-card-header>
+        <mat-card-title class="card-title">
+          {{ product.title }}
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="card-content">
+        <p>
+          {{ product.description }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions class="card-buttons">
+        <div>
+          <button mat-icon-button><mat-icon>star_half</mat-icon></button>
+        </div>
+        <div>
+          <button mat-icon-button><mat-icon>edit</mat-icon></button>
+          <button mat-icon-button><mat-icon>delete</mat-icon></button>
+        </div>
+      </mat-card-actions>
+    </mat-card>
+  </div>

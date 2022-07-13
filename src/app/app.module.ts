@@ -6,18 +6,29 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from "@angular/material/card";
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ProductComponent } from './product/product.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductComponent,
+    AddProductComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +39,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSidenavModule,
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

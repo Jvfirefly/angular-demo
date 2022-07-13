@@ -1,12 +1,14 @@
-<div>
-    <mat-form-field>​
-        <input matInput placeholder="Username">​
-    </mat-form-field>
-</div>
-<div>
-    <mat-form-field>​
-        <input matInput type="password" placeholder="Password">​
-    </mat-form-field>
-</div>
+<div class="loginForm">
+    <div>
+        <mat-form-field>​
+            <input matInput placeholder="Username" name="userName" [(ngModel)]="userName">​
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>​
+            <input matInput type="password" placeholder="Password" name="password" [(ngModel)]="password">​
+        </mat-form-field>
+    </div>
 
-<button mat-raised-button>Sign in</button>
+    <button mat-raised-button type="submit" (click)="onLogin()" routerLink="/add-product">Sign in</button>
+</div>
