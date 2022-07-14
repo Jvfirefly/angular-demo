@@ -1,2 +1,8 @@
 <app-navbar></app-navbar>
 
+<p>Titlul este {{title}}</p>
+<h1 [style.color]="color">{{title}} </h1>
+<button [disabled]="buttonDisabled">Button</button>
+<p>My name is {{title}}</p>
+<button (click)="updateTitle()">Update button</button>
+<p [(ngModel)]= "homeContent" >Note content is:  {{homeContent}}</p>​

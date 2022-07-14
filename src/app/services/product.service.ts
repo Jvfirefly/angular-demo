@@ -9,7 +9,7 @@ export class ProductService {
   products: Product[] = [
     {
       id: "id1",
-      title: "Appel",
+      title: "Apple",
       description: "green",
       price: 2
     },
@@ -21,13 +21,13 @@ export class ProductService {
     },
     {
       id: "id3",
-      title: "oil",
-      description: "oliver oil",
+      title: "Oil",
+      description: "olive oil",
       price: 10
     }
     ,{
       id: "id4",
-      title: "",
+      title: "Kiwi",
       description: "green",
       price: 2
     }

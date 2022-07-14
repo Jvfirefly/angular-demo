@@ -10,25 +10,24 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from "@angular/material/card";
 
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingCompoonents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ProductComponent } from './product/product.component';
 import { AddProductComponent } from './add-product/add-product.component';
-import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     NavbarComponent,
-    ProductComponent,
     AddProductComponent,
-    HomeComponent
+    routingCompoonents,
+    PageNotFoundComponent
+    
   ],
   imports: [
     BrowserModule,
